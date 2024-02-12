@@ -1,12 +1,14 @@
 "use client"
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFlag, faFlagCheckered} from '@fortawesome/free-solid-svg-icons'
 
 export default function Header(){
     const el = useRef(null);
     useEffect(() => {
         const typed = new Typed('#autoType', {
-        strings: [ "Silje", "24 years old","studying front-end development" ],
+        strings: [ "Silje", "24 years old","studying frontend development" ],
         startDelay: 800,
         backDelay: 500,
         typeSpeed: 70,
@@ -20,6 +22,14 @@ export default function Header(){
       }, []);
 
     return(
+        <> 
+        <div className='flex flex-col align-center items-center justify-center'>
+            <p>Language</p>
+            <div className='block'>
+            <FontAwesomeIcon icon={faFlag} className='p-2'/>
+            <FontAwesomeIcon icon={faFlagCheckered} className='p-2' />
+            </div>
+        </div>
         <header className="flex align-center justify-between">
          <h1>Hi! I&apos;m <span id="autoType" ref={el} ></span></h1>
              <nav className="text-bold">
@@ -30,5 +40,7 @@ export default function Header(){
                 </ul>
              </nav>
         </header>
-    )
+    
+        </>
+    )  
 }

@@ -1,12 +1,17 @@
 "use client"
 
-import Fade from "@/helpers/fade"
-export default function Hero (){
-    return(
-        <Fade>
-            <div className="text-black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, est placeat. Deserunt voluptates, odit minima eligendi dicta sunt ab veniam doloribus iusto quis itaque temporibus expedita perferendis deleniti cumque nulla sint delectus excepturi. Suscipit doloribus ipsum saepe repellat, expedita quae aliquam sapiente reiciendis. Deserunt nisi ea facere delectus unde neque animi quasi tempore id ab est totam nostrum voluptatum nulla deleniti magnam ipsam incidunt, aperiam optio libero quidem quis, quas harum! Minus delectus exercitationem quod, nisi tempore ut sit debitis quidem eaque, fugiat, qui nobis ipsa ratione consectetur maxime totam dolor soluta velit pariatur tempora laudantium. Quae tempora iste voluptatibus! Placeat, beatae autem unde a exercitationem voluptas ea, est quaerat similique dolores eum at debitis quisquam ut! Aliquid, fugiat eveniet! Aliquam cumque at architecto. Dolores dolorum esse aliquam eum ipsum! Voluptatum maiores minus dolores quam eum, dolorem necessitatibus quibusdam distinctio earum magnam eaque impedit suscipit omnis esse. Iusto, a odio totam iste dolorum reprehenderit animi doloribus blanditiis esse ut minima dolore libero! Asperiores placeat dolor et ducimus mollitia, nulla recusandae ratione nisi labore voluptatum modi debitis corporis cupiditate libero aperiam, aut autem, doloribus eligendi alias architecto aliquid natus magnam! Illo iste atque, doloribus alias magnam libero velit beatae itaque error accusamus! Adipisci voluptatibus magnam accusantium sequi eligendi distinctio sunt repellendus corrupti? Repellat deleniti modi earum cum tempore ipsam voluptatem, aperiam ducimus laudantium facere nostrum, nobis error animi quo accusantium labore, voluptate voluptas odit tempora odio explicabo quod! Atque inventore vel iste ab eveniet sapiente animi quidem? Natus tempore autem laboriosam dolorum similique deserunt suscipit quasi alias, odio facilis id ut possimus nobis culpa? Nobis id dolorum ducimus architecto eos, corporis explicabo dolor pariatur esse, quasi labore ipsum modi expedita qui aspernatur accusamus ad quia consequatur ratione praesentium tempore ullam. Illum placeat debitis, rerum voluptas expedita fugiat architecto error obcaecati nam blanditiis quod assumenda eum pariatur molestiae cupiditate atque officia et? Sint rerum dolor nam, porro cupiditate omnis quos aspernatur dolores consectetur quasi soluta fugit debitis quo earum? Reprehenderit, doloribus? Optio dolorum eius asperiores amet voluptas ullam. Facilis et, est molestiae placeat non culpa quis eum ipsa rerum inventore beatae dolorum quidem labore nisi vel magnam provident ea dolore perferendis sunt similique ut totam minus? Natus dolores ex itaque accusantium perferendis eum repellendus ab laudantium dignissimos in. Quod voluptatem tempore eos. Delectus dignissimos totam similique ea optio omnis, cum ipsum magnam fugiat inventore deleniti iure praesentium eligendi illo? Vitae, quidem! Minus at facere voluptas et nisi quae id. Ipsam vel repudiandae vero unde impedit, hic quod officia dolorem quisquam mollitia recusandae accusamus error placeat adipisci cumque, facere nemo totam id minima ipsa eaque neque nam. Amet nobis unde ea nisi quisquam facere saepe consequuntur aperiam reprehenderit voluptate, ex enim magnam labore velit eius nulla maxime minus dicta laboriosam assumenda iure, doloremque dolore libero! Similique exercitationem totam non officia provident doloremque modi excepturi obcaecati quo quos. Adipisci recusandae vel repudiandae, soluta nisi alias earum corrupti eligendi ipsa cupiditate eos minima nesciunt nulla molestias numquam sunt consequuntur iure, veniam nobis dolor ducimus et?
+export default function Hero() {
+    return (
+        <>
+            <div className="h-600">
+                <h1 className="text-9xl p-10 m-3 text-center text-darkColor h-400">
+                    THIS IS MY HERO
+                    hello
+                </h1>
+                <h2>Available for:</h2>
+                <p>Unpaid interships from 6th of May 20/24 til 14th of June 2024</p>
             </div>
-        </Fade>
+        </>
+
     )
 }
