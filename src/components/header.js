@@ -23,14 +23,14 @@ export default function Header(){
 
     return(
         <> 
-        <div className='flex flex-col align-center items-center justify-center'>
+        <div className='flex flex-col align-center items-center justify-center font-title font-bold text-xl'>
             <p>Language</p>
-            <div className='block'>
+            <div className='block text-xl'>
             <FontAwesomeIcon icon={faFlag} className='p-2'/>
             <FontAwesomeIcon icon={faFlagCheckered} className='p-2' />
             </div>
         </div>
-        <header className="flex align-center justify-between">
+        <header className="flex align-center justify-between font-title font-bold text-darkColor text-xl">
          <h1>Hi! I&apos;m <span id="autoType" ref={el} ></span></h1>
              <nav className="text-bold">
                 <ul className="flex">

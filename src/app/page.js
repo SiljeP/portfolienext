@@ -1,7 +1,7 @@
 "use client"
 import About from "@/components/aboutme";
 import Header from "@/components/header";
-import Hero from "@/components/Hero";
+import Hero from "@/components/hero";
 import Fade from "@/helpers/fade";
 
 
