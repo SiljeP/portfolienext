@@ -3,6 +3,8 @@
 import Image from "next/image"
 import { Starsvg } from "./starsvg"
 import { Starsvgleft } from "./starsvgleft"
+import Logoslider from "./logoslider"
+import LogoCarousel from "./logocarousel"
 
 export default function Hero() {
     return (
@@ -20,17 +22,8 @@ export default function Hero() {
                     <p className=" p-3">Unpaid internship from 6th of May 20/24 til 14th of June 2024</p>
                 </div>
 
-                <div className="absolute bottom-0 left-0 flex">
-                    <h2>I work with</h2>
-                    <Image src="/images/html5.png" width={30} height={50} alt="HTML5 logo"/>
-                    <Image src="/images/css.png" width={30} height={50} alt="CSS logo"/>
-                    <Image src="/images/js.png" width={30} height={50} alt="Javascript logo"/>
-                    <Image src="/images/react.png" width={30} height={50} alt="React logo"/>
-                    <Image src="/images/tailwind.png" width={30} height={50} alt="Tailwind logo"/>
-                    <Image src="/images/framer-motion.webp" width={30} height={50} alt="Framer Motion logo"/>
-                    <Image src="/images/nextjs.png" width={30} height={50} alt="Next JS logo"/>
-                    <Image src="/images/nodejs.png" width={30} height={50} alt="Node JS logo"/>
-                </div>
+            <Logoslider/>
+            <LogoCarousel/>
             </div>
         </>
 
