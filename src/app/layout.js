@@ -1,5 +1,7 @@
 import "./globals.css";
-
+import "@fontsource/oleo-script";
+import '@fontsource-variable/josefin-sans';
+import '@fontsource/fira-mono';
 
 export const metadata = {
   title: "Frontend Silje",

@@ -7,9 +7,10 @@ export const Starsvg = (props) => (
     viewBox="0 0 151 148"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className="z-5"
     {...props}
   >
-    <motion.g id="star/filled/wide"
+    <motion.g  id="star/filled/wide"
     animate={{  rotate:["10deg", "5deg", "10deg" ]}}
     transition={{
       times: [1],
