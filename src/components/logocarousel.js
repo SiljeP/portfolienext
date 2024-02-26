@@ -24,17 +24,17 @@ export default function LogoCarousel() {
   ]
 
   return (
-    <section id="logos" className="absolute bottom-0 left-0 w-[50%] text-center m-auto right-0">
-      <h2 className="font-title text-2xl font-bold text-darkColor">I work with</h2>
+    <section id="logos" className=" w-[50%] text-center mx-auto mb-[10%]">
+      <h2 className="font-title text-4xl font-bold text-white">I work with</h2>
       <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none hover:animate-infinite-scroll">
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
           {logos.map((logo, index) => (
             <li key={index}>
               <Image src={logo.src} alt={logo.alt} width={100} height={100} style={{ width: "auto", height: "50px" }} />
             </li>
           ))}
         </ul>
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none hover:animate-infinite-scroll" aria-hidden="true">
+        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
           {logos.map((logo, index) => (
             <li key={index}>
               <Image src={logo.src} alt={logo.alt} width={100} height={100} style={{ width: "auto", height: "50px" }} />

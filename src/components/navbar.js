@@ -80,7 +80,7 @@ export default function Navbar() {
                                 >
                                     <ul className="space-y-5">
                                         <li>
-                                            <a href="#" className="text-4xl font-bold">About</a>
+                                            <a href="#about" className="text-4xl font-bold">About</a>
                                         </li>
                                         <li>
                                             <a href="#" className="text-4xl font-bold">Work</a>
