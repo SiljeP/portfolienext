@@ -15,11 +15,9 @@ export default function Home() {
       <Fade>
         <LogoCarousel />
       </Fade>
+      <About />
       <Fade>
-        <About />
-      </Fade>
-      <Fade>
-        <Work/>
+        <Work />
       </Fade>
     </body>
 
