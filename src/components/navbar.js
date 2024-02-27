@@ -80,13 +80,13 @@ export default function Navbar() {
                                 >
                                     <ul className="space-y-5">
                                         <li>
-                                            <a href="#about" className="text-4xl font-bold">About</a>
+                                            <a href="#about" className="text-4xl font-bold" onClick={() => toggleMobileNav(false)}>About</a>
                                         </li>
                                         <li>
-                                            <a href="#" className="text-4xl font-bold">Work</a>
+                                            <a href="#work" className="text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Work</a>
                                         </li>
                                         <li>
-                                            <a href="#" className="text-4xl font-bold">Contact</a>
+                                            <a href="#contact" className="text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Contact</a>
                                         </li>
                                     </ul>
                                 </motion.div>

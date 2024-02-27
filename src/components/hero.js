@@ -16,7 +16,7 @@ export default function Hero() {
                     <Starsvg className="" />
                 </div>
                 <div className="w-24 h-24 absolute bottom-1 right-1 ">
-                    <Starsvgleft className="" />
+                    <Starsvgleft className="fill-darkColor" />
                 </div>
                 <motion.div
                     initial={{ x: "200%" }}

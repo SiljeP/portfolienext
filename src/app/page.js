@@ -1,5 +1,6 @@
 "use client"
 import About from "@/components/aboutme";
+import Contact from "@/components/contact";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import LogoCarousel from "@/components/logocarousel";
@@ -9,7 +10,7 @@ import Fade from "@/helpers/fade";
 
 export default function Home() {
   return (
-    <body className="bg-backgroundLinear bg-no-repeat min-h-screen w-[70%] mx-auto mt-10 overflow-x-hidden">
+    <>
       <Header />
       <Hero />
       <Fade>
@@ -19,7 +20,10 @@ export default function Home() {
       <Fade>
         <Work />
       </Fade>
-    </body>
+      <Contact />
+    </>
+
+
 
   );
 

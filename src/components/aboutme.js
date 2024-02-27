@@ -42,7 +42,7 @@ export default function Aboutme() {
                 <p className="text-black font-body text-2xl">I&apos;m currently looking for an internship in front-end development lasting six weeks (paid by my school - not you!) in the period <span>22. January 2024 to 8.March 2024. </span></p>
 
                 <section className="text-center mt-4">
-                    <motion.button className="font-bold font-title text-white text-4xl"
+                    <motion.button className="font-bold font-title text-white text-2xl"
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setIsVisible(!isVisible)}>Personal{isVisible ? <FontAwesomeIcon className="text-s px-3" icon={faArrowDown} /> : <FontAwesomeIcon className="text-s px-3" icon={faArrowRight} />}
                     </motion.button>
