@@ -12,14 +12,16 @@ import Fade from "@/helpers/fade";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Fade>
-        <LogoCarousel />
-      </Fade>
-      <About />
-      <Work />
-      <Contact />
+      <div className="w-[70%] min-h-screen mx-auto mt-10 overflow-x-hidden">
+        <Header />
+        <Hero />
+        <Fade>
+          <LogoCarousel />
+        </Fade>
+        <About />
+        <Work />
+        <Contact />
+      </div>
       <Footer />
     </>
 

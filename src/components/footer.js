@@ -1,14 +1,44 @@
 "use client"
 
 import LogoCarousel from "./logocarousel"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+import Instagram from '/public/images/instagram.png'
+import Linkedin from '/public/images/linkedin.png'
+import Mail from '/public/images/mail.png'
 
 export default function Footer() {
 
     return (
 
-        <footer className="w-100% h-[100px] mt-10 text-center">
-            <p>This is my footer</p>
-            <LogoCarousel className="bottom-0 m-5 w-90%" />
+        <footer className="w-100% w-full h-full mt-10 shadow-[0px_-10px_16px_1px_#FEB2B2]">
+
+            <div className="flex flex-wrap align-center justify-around p-3 ">
+
+                <a href="#header">
+                    <p className="color-white text-right cursor-pointer font-body p-3 mb-4">Back to top<FontAwesomeIcon className="text-s px-3 color-white" icon={faArrowUp} /></p>
+                </a>
+                <ul className="flex items-left md:items-center flex-row gap-x-2 md:gap-x-5 justify-center pb-4 mb-10">
+                    <li>
+                        <a href="mailto:silje.a.paldrup@gmail.com">
+                            <Image src={Mail} alt={"Mail logo"} height={100} width={100} style={{ width: "auto", height: "40px" }}></Image>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/silje-agø-paldrup-4996882a7" target="_blank" >
+                            <Image src={Linkedin} alt={"LinkedIn logo"} height={100} width={100} style={{ width: "auto", height: "40px" }}></Image>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/siljepaldrup" target="_blank" >
+                            <Image src={Instagram} alt={"Instagram logo"} height={100} width={100} style={{ width: "auto", height: "40px" }}></Image>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <LogoCarousel className="bottom-0  mb-0 w-100%" />
         </footer>
 
 
