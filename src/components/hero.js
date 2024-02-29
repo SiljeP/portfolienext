@@ -13,10 +13,10 @@ export default function Hero() {
         <>
             <article className="h-screen md:h-[500px] relative z-1 ">
 
-                <div className="w-24 h-24 absolute left-0 top-20 sm:left-0 sm:top-0 ">
-                    <Starsvg className="" />
+                <div className="w-20 h-20 md:w-24 md:h-24 absolute left-0 top-20 sm:left-0 sm:top-0 ">
+                    <Starsvg className="fill-white" />
                 </div>
-                <div className="w-24 h-24 absolute bottom-40 md:bottom-1 right-1 ">
+                <div className="w-20 h-20 md:w-24 md:h-24 absolute bottom-40 md:bottom-1 right-1 ">
                     <Starsvgleft className="fill-white" />
                 </div>
                 <motion.div

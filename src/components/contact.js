@@ -15,12 +15,12 @@ export default function Contact() {
                 visible: { opacity: 1, scale: 1 },
                 hidden: { opacity: 0, scale: 0 }
             }}>
-            <div className="w-24 h-24 absolute top-100 left-40">
+            <div className="w-14 h-14 md:w-24 md:h-24 absolute top-100 left-10 md:left-40">
                 <Starsvg className="fill-white -rotate-12" />
             </div>
 
-            <h1 id="contact" className="font-title text-white p-2 mt-10 text-6xl text-center">Contact</h1>
-            <p className="font-body text-black p-2 text-xl text-center ">Please feel free to contact me with questions, or if you&apos;re interested in taking a look at my CV.</p>
+            <h1 id="contact" className="font-title text-white p-2 mt-10 text-4xl md:text-6xl text-center">Contact</h1>
+            <p className="font-body text-black p-2 text-l md:text-2xl text-center ">Please feel free to contact me with questions, or if you&apos;re interested in taking a look at my CV.</p>
             <div>
                 <form className="max-w-sm mx-auto" name="contact" method="POST" data-netlify="true" netlify>
                     <input type="hidden" name="form-name" value="contact" />
