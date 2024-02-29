@@ -2,6 +2,7 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import Navbar from './navbar';
+import { Starsvgleft } from './starsvgleft';
 
 export default function Header() {
     const el = useRef(null);
@@ -13,12 +14,12 @@ export default function Header() {
             typeSpeed: 70,
             backSpeed: 50,
             cursorChar: "|",
-            onComplete: function(self) { self.cursor.remove() }
+            onComplete: function (self) { self.cursor.remove() }
         })
         // Destroying
         return () => {
             typed.destroy();
-          
+
         };
     }, []);
 
@@ -26,7 +27,10 @@ export default function Header() {
 
         <header className="h-[300px] font-title font-bold flex justify-between w-full text-darkColor text-7xl mt-[10%]">
             <h1 className='w-[60%]'>Hi! I&apos;m <span id="autoType" ref={el} ></span></h1>
-            <Navbar/>
+            <div className="w-24 h-24  right-4 top-0 left-4">
+                <Starsvgleft className="fill-white rotate-2" />
+            </div>
+            <Navbar />
         </header>
 
 

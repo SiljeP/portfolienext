@@ -79,15 +79,18 @@ export default function Navbar() {
 
                                 >
                                     <ul className="space-y-5">
-                                        <li>
-                                            <a href="#about" className="text-4xl font-bold" onClick={() => toggleMobileNav(false)}>About</a>
-                                        </li>
-                                        <li>
-                                            <a href="#work" className="text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Work</a>
-                                        </li>
-                                        <li>
-                                            <a href="#contact" className="text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Contact</a>
-                                        </li>
+                                        <motion.li
+                                            whileTap={{ scale: 0.95 }}>
+                                            <a href="#about" className="scroll-smooth text-4xl font-bold" onClick={() => toggleMobileNav(false)}>About</a>
+                                        </motion.li>
+                                        <motion.li
+                                            whileTap={{ scale: 0.95 }}>
+                                            <a href="#work" className="scroll-smooth text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Work</a>
+                                        </motion.li>
+                                        <motion.li
+                                            whileTap={{ scale: 0.95 }}>
+                                            <a href="#contact" className="scroll-smooth text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Contact</a>
+                                        </motion.li>
                                     </ul>
                                 </motion.div>
                                 <motion.div

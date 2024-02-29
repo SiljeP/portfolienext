@@ -6,6 +6,8 @@ import Fade from "@/helpers/fade"
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Starsvg } from "./starsvg";
+import Personal from '/public/images/personal.png'
 
 
 export default function Aboutme() {
@@ -25,6 +27,9 @@ export default function Aboutme() {
 
     return (
         <>
+            <div className="w-24 h-24 absolute top-100 left-40">
+                <Starsvg className="fill-white -rotate-12" />
+            </div>
             <motion.article
                 initial="hidden"
                 whileInView="visible"
@@ -34,8 +39,8 @@ export default function Aboutme() {
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: 0 }
                 }}
-                id="about" className="text-center mt-4">
-                <h2 className=" font-title text-white text-4xl ">About me</h2>
+                className="text-center mt-4">
+                <h1 id="about" className=" font-title text-white text-6xl ">About me</h1>
                 <p className="text-black font-body text-2xl">Hello world! My name is Silje, and I&apos;m a Danish, 24 year old girl, studying to become a frontend developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time.</p>
                 <p className="text-black font-body text-2xl">I&apos;m currently on the main course in VET (Vocational education and
                     training) in Web development at <a href="https://www.rts.dk/in-english"> Roskilde Technical College(VET).</a></p>
@@ -46,13 +51,17 @@ export default function Aboutme() {
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setIsVisible(!isVisible)}>Personal{isVisible ? <FontAwesomeIcon className="text-s px-3" icon={faArrowDown} /> : <FontAwesomeIcon className="text-s px-3" icon={faArrowRight} />}
                     </motion.button>
-                    <motion.p animate={isVisible ? show : hide} id="personal" className="text-black font-body text-2xl hidden" >
+                    <motion.p animate={isVisible ? show : hide} id="personal" className="text-black font-body text-2xl hidden">
+                        <Image className="rounded-full inline" src={Personal} height={500} width={500} alt="picture of Silje" style={{ width: "150px", height: "auto" }} />
                         I have plenty of hobbies that I love to do when I&apos;m not
                         coding. I enjoy rugtufting slightly ugly rugs, painting slightly ugly pictures, and bookbinding ugly paperbacks to
                         much prettier hardbacks. My dog Bucky is also very happy when I take him on long walks, so I try to do
                         that a lot too. I also enjoy reading, and read about 120 books a year.</motion.p>
 
                 </section>
+                <div className="w-24 h-24 absolute top-100 right-40">
+                    <Starsvg className="fill-white rotate-12" />
+                </div>
 
             </motion.article>
 

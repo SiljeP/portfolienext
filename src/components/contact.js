@@ -1,5 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
+import { Starsvg } from "./starsvg"
 
 export default function Contact() {
 
@@ -14,6 +15,9 @@ export default function Contact() {
                 visible: { opacity: 1, scale: 1 },
                 hidden: { opacity: 0, scale: 0 }
             }}>
+            <div className="w-24 h-24 absolute top-100 left-40">
+                <Starsvg className="fill-white -rotate-12" />
+            </div>
 
             <h1 id="contact" className="font-title text-white p-2 mt-10 text-6xl text-center">Contact</h1>
             <p className="font-body text-black p-2 text-xl text-center ">Please feel free to contact me with questions, or if you&apos;re interested in taking a look at my CV.</p>
@@ -35,6 +39,7 @@ export default function Contact() {
                             <span className="relative px-5 py-2.5 transition-all ease-in duration-75 rounded-md group-hover:bg-opacity-0">
                                 Send
                             </span>
+
                         </motion.button>
                     </div>
                 </form>

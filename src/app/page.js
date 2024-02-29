@@ -1,6 +1,7 @@
 "use client"
 import About from "@/components/aboutme";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import LogoCarousel from "@/components/logocarousel";
@@ -17,10 +18,9 @@ export default function Home() {
         <LogoCarousel />
       </Fade>
       <About />
-      <Fade>
-        <Work />
-      </Fade>
+      <Work />
       <Contact />
+      <Footer />
     </>
 
 
