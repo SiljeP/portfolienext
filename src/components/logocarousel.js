@@ -24,8 +24,8 @@ export default function LogoCarousel() {
   ]
 
   return (
-    <section id="logos" className=" w-[50%] text-center mx-auto mb-[10%]">
-      <h2 className="font-title text-4xl font-bold text-white">I work with</h2>
+    <section id="logos" className=" w-[70%] text-center mx-auto mb-[10%]">
+      <h2 className="font-title text-2xl sm:text-4xl font-bold text-white">I work with</h2>
       <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
         <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
           {logos.map((logo, index) => (

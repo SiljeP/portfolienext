@@ -25,8 +25,8 @@ export default function Header() {
 
     return (
 
-        <header className="h-[300px] font-title font-bold flex justify-between w-full text-darkColor text-7xl mt-[10%]">
-            <h1 className='w-[60%]'>Hi! I&apos;m <span id="autoType" ref={el} ></span></h1>
+        <header className=" h-fit sm:h-[300px] font-title font-bold flex justify-between w-full text-darkColor  mt-[10%]">
+            <h1 className='w-[60%] text-2xl sm:text-5xl md:text-7xl'>Hi! I&apos;m <span id="autoType" ref={el} ></span></h1>
             <div className="w-24 h-24  right-4 top-0 left-4">
                 <Starsvgleft className="fill-white rotate-2" />
             </div>

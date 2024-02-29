@@ -22,7 +22,7 @@ export default function Contact() {
             <h1 id="contact" className="font-title text-white p-2 mt-10 text-6xl text-center">Contact</h1>
             <p className="font-body text-black p-2 text-xl text-center ">Please feel free to contact me with questions, or if you&apos;re interested in taking a look at my CV.</p>
             <div>
-                <form className="max-w-sm mx-auto" name="contact" method="POST" data-netlify="true">
+                <form className="max-w-sm mx-auto" name="contact" method="POST" data-netlify="true" netlify>
                     <input type="hidden" name="form-name" value="contact" />
                     <div>
                         <label className="font-body block mb-2 text-l text-white" htmlFor="email">Email:</label>

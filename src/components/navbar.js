@@ -12,13 +12,13 @@ export default function Navbar() {
     return (
         <>
             <nav className="sticky top-0 inset-x-0 h-16 z-50">
-                <div className="container m-auto  h-full p-1 flex items-center">
+                <div className="container m-auto  h-full p-1 flex justify-center items-center">
                     <div className="relative z-50 p-2">
                         <motion.button
                             animate={mobileNav ? "open" : "closed"}
                             onClick={() => toggleMobileNav()}
                             className="flex flex-col space-y-1 h-full items-center m-auto">
-                            <h2 className=" text-xl">Menu</h2>
+                            <h2 className="text-l md:text-xl">Menu</h2>
                             <motion.span variants={{
                                 closed: { rotate: 0, y: 0, background: "#FFFFFF" },
                                 open: { rotate: 45, y: 10, background: "#FF9292" }
@@ -64,7 +64,7 @@ export default function Navbar() {
                                 initial="closed"
                                 animate="open"
                                 exit="closed"
-                                className="fixed inset-0 w-[30%] z-40 bg-accentColorLight space-y-10 p-6 container mx-auto flex flex-col justify-center">
+                                className="fixed inset-0 w-[40%] md:w-[30%] z-40 bg-accentColorLight space-y-10 p-6 container mx-auto flex flex-col justify-center">
                                 <motion.div
                                     variants={{
                                         open: {
@@ -81,15 +81,15 @@ export default function Navbar() {
                                     <ul className="space-y-5">
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>
-                                            <a href="#about" className="scroll-smooth text-4xl font-bold" onClick={() => toggleMobileNav(false)}>About</a>
+                                            <a href="#about" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>About</a>
                                         </motion.li>
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>
-                                            <a href="#work" className="scroll-smooth text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Work</a>
+                                            <a href="#work" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Work</a>
                                         </motion.li>
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>
-                                            <a href="#contact" className="scroll-smooth text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Contact</a>
+                                            <a href="#contact" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Contact</a>
                                         </motion.li>
                                     </ul>
                                 </motion.div>
@@ -117,7 +117,7 @@ export default function Navbar() {
                                         }
                                     }}
                                 >
-                                    <ul className="flex items-center gap-x-5 justify-center">
+                                    <ul className="flex items-left md:items-center flex-col sm:flex-row gap-x-2 md:gap-x-5 justify-center">
                                         <li>
                                             <a href="mailto:silje.a.paldrup@gmail.com">
                                                 <Image src={Mail} alt={"Mail logo"} height={100} width={100} style={{ width: "auto", height: "50px" }}></Image>
