@@ -11,7 +11,7 @@ export default function Hero() {
 
     return (
         <>
-            <article className="h-screen md:h-[500px] relative z-1 ">
+            <article className="h-[700px] sm:h-screen md:h-[500px] relative z-1 ">
 
                 <div className="w-20 h-20 md:w-24 md:h-24 absolute left-0 top-20 sm:left-0 sm:top-0 ">
                     <Starsvg className="fill-white" />

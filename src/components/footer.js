@@ -38,8 +38,9 @@ export default function Footer() {
                 </ul>
             </div>
             <p className="text-white text-s font-body text-center pb-3" >Pssst. Have you tried clicking the stars?</p>
-
-
+            <div className="hidden md:block mb-0 w-80% mt-10">
+                <LogoCarousel />
+            </div>
         </footer>
 
 
