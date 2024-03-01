@@ -12,7 +12,7 @@ import Fade from "@/helpers/fade";
 export default function Home() {
   return (
     <>
-      <div className="w-[70%] min-h-screen mx-auto mt-10 overflow-x-hidden">
+      <div className="w-[70%] mx-auto mt-10 overflow-x-hidden">
         <Header />
         <Hero />
         <Fade>

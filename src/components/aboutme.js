@@ -2,15 +2,16 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import Fade from "@/helpers/fade"
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Starsvg } from "./starsvg";
-import Personal from '/public/images/personal.png'
+import FactStar from "@/helpers/facts";
 
 
 export default function Aboutme() {
+
+    const [showfact, setShowfact] = useState(false)
 
     const show = {
         opacity: 1,
@@ -28,7 +29,7 @@ export default function Aboutme() {
     return (
         <>
             <div className="w-14 h-14 md:w-24 md:h-24 absolute top-100 left-2 sm:left-40">
-                <Starsvg className="fill-white -rotate-12" />
+                <Starsvg onClick={() => setShowfact(true)} className="fill-white -rotate-12" />
             </div>
             <motion.article
                 initial="hidden"
@@ -59,10 +60,11 @@ export default function Aboutme() {
 
                 </section>
                 <div className="w-14 h-14 md:w-24 md:h-24 absolute top-100 right-20 md:right-40">
-                    <Starsvg className="fill-white rotate-12" />
+                    <Starsvg onClick={() => setShowfact(true)} className="fill-white rotate-12" />
                 </div>
-
+                {showfact ? <FactStar showfact={showfact} setShowfact={setShowfact} /> : null}
             </motion.article>
+
 
 
         </>
