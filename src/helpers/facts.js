@@ -26,9 +26,14 @@ export default function FactStar({ className }) {
             id: Math.random(),
             text: `${FACTS[randomIndex]}`,
         });
-        setTimeout(function () {
+        const TIMEOUT = setTimeout(function () {
             setShowfact(false)
         }, 5000)
+
+        return function () {
+            clearTimeout(TIMEOUT)
+        }
+
     }, [showfact, setShowfact])
 
     return (
@@ -41,7 +46,7 @@ export default function FactStar({ className }) {
                         key="modal"
                         initial={{ opacity: 0, y: 50, scale: 0.3 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.5 } }}
+                        exit={{ opacity: 0, x: 200, scale: 0.5, transition: { duration: 0.3 } }}
                         className={className}  >
                         {/* style={{ backgroundColor: "rgba(255 146 146 / 75%)" }} */}
                         <h1 className="font-title font-bold text-white text-m sm:text-l md:text-xl">Fun space fact!</h1>
