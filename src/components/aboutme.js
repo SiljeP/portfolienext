@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -62,10 +61,10 @@ export default function Aboutme() {
                 <div className="w-14 h-14 md:w-24 md:h-24 absolute top-100 right-20 md:right-40">
                     <Starsvg onClick={() => setShowfact(true)} className="fill-white rotate-12" />
                 </div>
-                {showfact ? <FactStar showfact={showfact} setShowfact={setShowfact} /> : null}
+
             </motion.article>
 
-
+            {showfact ? <FactStar showfact={showfact} setShowfact={setShowfact} /> : null}
 
         </>
 
