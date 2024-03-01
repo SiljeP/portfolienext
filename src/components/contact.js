@@ -1,8 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import { Starsvg } from "./starsvg"
-
-import { useContext, useState } from "react"
+import { useContext } from "react"
 import ShowFactContext from "@/helpers/showfactcontext"
 
 export default function Contact() {

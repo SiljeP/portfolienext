@@ -28,7 +28,7 @@ export default function FactStar({ className }) {
         });
         setTimeout(function () {
             setShowfact(false)
-        }, 3000)
+        }, 5000)
     }, [showfact, setShowfact])
 
     return showfact ? (
@@ -38,10 +38,10 @@ export default function FactStar({ className }) {
                 initial={{ opacity: 0, y: 50, scale: 0.3 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.4 } }}
-                className={className} style={{ backgroundColor: "rgba(255 146 146 / 75%)" }} >
-
-                <h1 className="font-title font-bold text-black">Fun space fact!</h1>
-                <p className="font-body text-white p-2">{data?.text}</p>
+                className={className}  >
+                {/* style={{ backgroundColor: "rgba(255 146 146 / 75%)" }} */}
+                <h1 className="font-title font-bold text-white text-m sm:text-l md:text-xl">Fun space fact!</h1>
+                <p className="font-body text-s sm:text-m md:text-l text-white p-2">{data?.text}</p>
             </motion.div >
 
 

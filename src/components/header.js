@@ -1,5 +1,5 @@
 "use client"
-import { useContext, useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import Navbar from './navbar';
 import { Starsvgleft } from './starsvgleft';

@@ -27,10 +27,8 @@ export default function Home() {
         <Contact />
       </div>
       <Footer />
-      <FactStar className="text-center fixed top-2 right-2  p-2  rounded-lg h-fit sm:w-[90px] md:w-[200px] lg:w-[300px]" />
+      <FactStar className="z-[3000] text-center fixed top-2 right-2  p-2  rounded-lg h-fit sm:w-[90px] md:w-[200px] lg:w-[300px] text-white bg-gradient-to-r from-pink-400/75 via-pink-500/75 to-pink-600/75 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300/75 dark:focus:ring-pink-800/75 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium  text-sm px-5 py-2.5 me-2 mb-2" />
     </ShowFactContext.Provider>
-
-
 
 
   );

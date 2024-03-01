@@ -5,7 +5,7 @@ import { Starsvgleft } from "./starsvgleft"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import ShowFactContext from "@/helpers/showfactcontext";
 
 
