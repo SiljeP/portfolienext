@@ -1,8 +1,11 @@
 "use client"
 
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import ShowFactContext from "./showfactcontext";
+import { motion } from "framer-motion";
 
-export default function FactStar({ showfact, setShowfact }) {
+export default function FactStar({ className }) {
+    const [showfact, setShowfact] = useContext(ShowFactContext)
 
     const [data, setData] = useState(null)
 
@@ -28,18 +31,23 @@ export default function FactStar({ showfact, setShowfact }) {
         }, 3000)
     }, [showfact, setShowfact])
 
-    return (
+    return showfact ? (
 
         <>
-            <div style={{ backgroundColor: "rgba(255 146 146 / 65%)" }} className="text-center relative top-1 p-2 left-5 h-[50%] w-min sm:h-fit sm:w-min md:h-min  border-2 rounded-lg">
+            <motion.div
+                initial={{ opacity: 0, y: 50, scale: 0.3 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.4 } }}
+                className={className} style={{ backgroundColor: "rgba(255 146 146 / 75%)" }} >
+
                 <h1 className="font-title font-bold text-black">Fun space fact!</h1>
                 <p className="font-body text-white p-2">{data?.text}</p>
-            </div >
+            </motion.div >
 
 
         </>
 
-    )
+    ) : null
 
 
 }

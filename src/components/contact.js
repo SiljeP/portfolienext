@@ -2,7 +2,11 @@
 import { motion } from "framer-motion"
 import { Starsvg } from "./starsvg"
 
+import { useContext, useState } from "react"
+import ShowFactContext from "@/helpers/showfactcontext"
+
 export default function Contact() {
+    const [showfact, setShowfact] = useContext(ShowFactContext)
 
     return (
 
@@ -16,7 +20,7 @@ export default function Contact() {
                 hidden: { opacity: 0, scale: 0 }
             }}>
             <div className="w-14 h-14 md:w-24 md:h-24 absolute top-100 left-10 md:left-40">
-                <Starsvg className="fill-white -rotate-12" />
+                <Starsvg onClick={() => setShowfact(true)} className="fill-white -rotate-12" />
             </div>
 
             <h1 id="contact" className="font-title text-white p-2 mt-10 text-4xl md:text-6xl text-center">Contact</h1>
@@ -45,7 +49,9 @@ export default function Contact() {
                 </form>
             </div>
 
+
         </motion.div>
+
 
 
     )

@@ -1,16 +1,17 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Starsvg } from "./starsvg";
-import FactStar from "@/helpers/facts";
+import ShowFactContext from "@/helpers/showfactcontext";
+
 
 
 export default function Aboutme() {
 
-    const [showfact, setShowfact] = useState(false)
+    const [showfact, setShowfact] = useContext(ShowFactContext)
 
     const show = {
         opacity: 1,
@@ -51,7 +52,7 @@ export default function Aboutme() {
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setIsVisible(!isVisible)}>Personal{isVisible ? <FontAwesomeIcon className="text-s px-3" icon={faArrowDown} /> : <FontAwesomeIcon className="text-s px-3" icon={faArrowRight} />}
                     </motion.button>
-                    <motion.p animate={isVisible ? show : hide} id="personal" className="text-black font-body text-xl md:text-2xl hidden">
+                    <motion.p animate={isVisible ? show : hide} id="personal" className="text-black font-body text-l md:text-2xl hidden">
                         I have plenty of hobbies that I love to do when I&apos;m not
                         coding. I enjoy rugtufting slightly ugly rugs, painting slightly ugly pictures, and bookbinding ugly paperbacks to
                         much prettier hardbacks. My dog Bucky is also very happy when I take him on long walks, so I try to do
@@ -64,7 +65,7 @@ export default function Aboutme() {
 
             </motion.article>
 
-            {showfact ? <FactStar showfact={showfact} setShowfact={setShowfact} /> : null}
+
 
         </>
 

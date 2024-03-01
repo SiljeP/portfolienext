@@ -1,15 +1,16 @@
 "use client"
-import { useEffect, useRef, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
 import Navbar from './navbar';
 import { Starsvgleft } from './starsvgleft';
-import FactStar from '@/helpers/facts';
+
+import ShowFactContext from '@/helpers/showfactcontext';
 
 
 
 export default function Header() {
 
-    const [showfact, setShowfact] = useState(false)
+    const [showfact, setShowfact] = useContext(ShowFactContext)
 
     const el = useRef(null);
     useEffect(() => {
@@ -38,7 +39,7 @@ export default function Header() {
             </div>
 
             <Navbar />
-            {showfact ? <FactStar showfact={showfact} setShowfact={setShowfact} /> : null}
+
         </header>
 
 

@@ -6,6 +6,9 @@ import '@fontsource/fira-mono';
 export const metadata = {
   title: "Frontend Silje",
   description: "Frontend developer",
+  icons: {
+    icon: "/images/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
