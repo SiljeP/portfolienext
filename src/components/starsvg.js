@@ -1,6 +1,7 @@
 import * as React from "react"
 import { motion } from "framer-motion"
 export const Starsvg = (props) => (
+
   <svg
     // width={151}
     // height={148}
@@ -9,6 +10,7 @@ export const Starsvg = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     className="z-5"
     {...props}
+
   >
     <motion.g id="star/filled/wide"
       animate={{ rotate: ["10deg", "5deg", "10deg"] }}

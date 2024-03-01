@@ -8,6 +8,7 @@ import Instagram from '/public/images/instagram.png'
 import Linkedin from '/public/images/linkedin.png'
 import Mail from '/public/images/mail.png'
 
+
 export default function Footer() {
 
     return (

@@ -5,20 +5,25 @@ import { Starsvgleft } from "./starsvgleft"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import FactStar from "@/helpers/facts";
+import { useState } from "react";
 
 
 export default function Hero() {
-
+    const [showfact, setShowfact] = useState(false)
     return (
         <>
             <article className="h-[700px] sm:h-screen md:h-[500px] relative z-1 ">
 
                 <div className="w-20 h-20 md:w-24 md:h-24 absolute left-0 top-20 sm:left-0 sm:top-0 ">
-                    <Starsvg className="fill-white" />
+                    <Starsvg onClick={() => setShowfact(true)} className="fill-white" />
+
                 </div>
                 <div className="w-20 h-20 md:w-24 md:h-24 absolute bottom-40 md:bottom-1 right-1 ">
-                    <Starsvgleft className="fill-white" />
+                    <Starsvgleft onClick={() => setShowfact(true)} className="fill-white" />
+
                 </div>
+                {showfact ? <FactStar showfact={showfact} setShowfact={setShowfact} /> : null}
                 <motion.div
                     initial={{ x: "200%" }}
                     animate={{ x: "0" }}
