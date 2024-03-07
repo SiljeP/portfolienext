@@ -4,6 +4,9 @@ import Image from "next/image";
 import Instagram from '/public/images/instagram.png'
 import Linkedin from '/public/images/linkedin.png'
 import Mail from '/public/images/mail.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
+import changelang from "@/helpers/language";
 
 export default function Navbar() {
 
@@ -79,6 +82,11 @@ export default function Navbar() {
 
                                 >
                                     <ul className="space-y-5">
+                                        <motion.li
+                                            whileTap={{ scale: 0.95 }}>
+                                            <a href="#" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>
+                                                <FontAwesomeIcon onClick={() => changelang()} className="text-4xl" icon={faLanguage} /></a>
+                                        </motion.li>
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>
                                             <a href="#about" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>About</a>

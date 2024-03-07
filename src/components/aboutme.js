@@ -41,12 +41,19 @@ export default function Aboutme() {
                     hidden: { opacity: 0, scale: 0 }
                 }}
                 className="text-center mt-4 ">
-                <h1 id="about" className=" font-title text-white text-4xl md:text-6xl ">About me</h1>
-                <p className="text-black font-body text-l md:text-2xl">Hello world! My name is Silje, and I&apos;m a Danish, 24 year old girl, studying to become a frontend developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time.</p>
-                <p className="text-black font-body text-l md:text-2xl">I&apos;m currently on the main course in VET (Vocational education and
-                    training) in Web development at <a href="https://www.rts.dk/in-english"> Roskilde Technical College(VET).</a></p>
-                <p className="text-black font-body text-l md:text-2xl">I&apos;m currently looking for an internship in front-end development lasting six weeks (paid by my school - not you!) in the period <span>22. January 2024 to 8.March 2024. </span></p>
-
+                <h1 id="about" className=" font-title text-white text-4xl md:text-6xl "><span lang="en">About me</span><span lang="da" aria-hidden="true" >Om Mig</span></h1>
+                <p className="text-black font-body text-l md:text-2xl">
+                    <span lang="en">Hello world! My name is Silje, and I&apos;m a Danish, 24 year old girl, studying to become a frontend developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time.</span>
+                    <span lang="da">Hej verden! Jeg hedder Silje, og jeg er en dansk 24 årig pige, der studerer Webudvikling. Jeg er meget detaljeorienteret, elsker at løse probelmer og har en unik evne til at fokuserer i længere tid af gangen.</span>
+                </p>
+                <p className="text-black font-body text-l md:text-2xl">
+                    <span lang="en">I&apos;m currently on the main course in VET (Vocational education and
+                        training) in Web development at <a href="https://www.rts.dk/in-english" target="_blank"> Roskilde Technical College(VET).</a></span>
+                    <span lang="da">Lige nu er jeg på hovedforløbet i Webudvikler uddannelsen fra  <a href="https://www.rts.dk/" target="_blank">Roskilde Teknisk Skole</a></span>
+                </p>
+                <p className="text-black font-body text-l md:text-2xl">
+                    <span lang="en">I&apos;m currently looking for an internship in frontend development lasting six weeks (paid by my school - not you!) in the period <span>6. May 2024 to 14. June 2024.</span></span>
+                    <span lang="da">Lige nu leder jeg efter en praktikplads indenfor webudvikling(frontendudvikler), som varer 6 uger (ulønnet da jeg får SU!), i perioden <span>6. maj 2024 to 14. juni 2024.</span></span></p>
                 <section className="text-center mt-4">
                     <motion.button className="font-bold font-title text-white text-xl md:text-2xl"
                         whileTap={{ scale: 0.95 }}
