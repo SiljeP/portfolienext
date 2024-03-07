@@ -8,6 +8,7 @@ import FramerMotion from '/public/images/framer-motion.webp'
 import NextJS from '/public/images/nextjs.png'
 import NodeJS from '/public/images/nodejs.png'
 import Sass from '/public/images/sass.png'
+import useLang from '@/helpers/language'
 
 export default function LogoCarousel() {
   var lang = useLang("da")

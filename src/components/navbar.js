@@ -7,6 +7,7 @@ import Mail from '/public/images/mail.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 import changelang from "@/helpers/language";
+import useLang from "@/helpers/language";
 
 export default function Navbar() {
 
