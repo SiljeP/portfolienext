@@ -1,5 +1,8 @@
 {
-    
+    "internship_title":"Available for:",
+    "internship_description":"Unpaid internship from 6th of May 20/24 til 14th of June 2024",
+    "internship_link":"Interested?",
+
     "menu_about":"About me",
     "about_first": "Hello world! My name is Silje, and I'm a Danish, 24 year old girl, studying to become a frontend developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time. ",
     "about_second": "I'm currently on the main course in VET (Vocational education and  training) in Webdevelopment at Roskilde Technical College(VET), that I'm graduating from in autumn 2024.",
@@ -18,5 +21,6 @@
     "menu_message":"Message:",
     "menu_button": "Submit",
 
+    "backtotop":"Back to top",
     "star_hint":"Pssst. Have you tried clicking the stars?"
 }

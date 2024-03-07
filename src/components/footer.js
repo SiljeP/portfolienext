@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="flex flex-wrap align-center justify-around p-3 ">
 
                 <a href="#header">
-                    <p className="color-white text-right cursor-pointer font-body p-3 mb-4">Back to top<FontAwesomeIcon className="text-s px-3 color-white" icon={faArrowUp} /></p>
+                    <p className="color-white text-right cursor-pointer font-body p-3 mb-4">{lang.backtotop}<FontAwesomeIcon className="text-s px-3 color-white" icon={faArrowUp} /></p>
                 </a>
                 <ul className="flex items-left md:items-center flex-row gap-x-2 md:gap-x-5 justify-center pb-4 mb-8">
                     <li>

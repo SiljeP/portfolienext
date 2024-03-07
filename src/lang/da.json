@@ -1,4 +1,8 @@
 {
+    "internship_title":"Klar til:",
+    "internship_description":"Ulønnet praktik i perioden 6. maj 2024 til 14. juni 2024",
+    "internship_link":"Interesseret?",
+
     "menu_about":"Om mig",
     "about_first": "Hej verden! Jeg hedder Silje, og jeg er en  24 årig dansk pige, der studerer Webudvikling.  Jeg er meget detaljeorienteret, elsker at løse probelmer og har en unik evne til at fokuserer i længere tid af gangen.",
     "about_second": "Lige nu er jeg på hovedforløbet i Webudvikler-uddannelsen på Roskilde Teknisk Skole, som jeg færdiggører i efteråret 2024.", 
@@ -7,7 +11,7 @@
     "about_personal":"Jeg er typen der har en milliard hobbier, så jeg undskylder på forhånd over at jeg ikke har nævnt dem alle. Jeg har altid været en stor læsehest, og læser normalt 100-200 bøger om året. Udover det så bruger jeg tid på at tufte gulvtæpper, bogbinding, maling i forskellige teknikker og lange gåture og træning med min hund Bucky.",
 
     "program_work":"Jeg arbejder med",
-    "menu_work": "Arbejder",
+    "menu_work": "Arbejde",
     "work_first":"De fleste af mine skoleprojekter har været før jeg lærte React, og derfor er denne side, mit portfolie, den mest opdaterede med min viden lige nu. På siden bruger jeg: React, Next.js, Tailwind, Framer Motion til animationer, Typed.js m.fl.",
     "work_second": "Andre projekter (fra før React) er blandt andet, web-API leg med pokedex. Se her.",
     
@@ -17,5 +21,7 @@
     "menu_message":"Besked:",
     "menu_button": "Send",
 
-    "star_hint":"Pssst. Har du prøvet at klikke på stjernerne?"
+    "backtotop":"Tilbage til toppen",
+    "star_hint":"Pssst. Har du prøvet at klikke på stjernerne?" 
+    
 }

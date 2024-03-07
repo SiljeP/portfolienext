@@ -7,10 +7,13 @@ import { motion } from "framer-motion";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from "react";
 import ShowFactContext from "@/helpers/showfactcontext";
+import useLang from "@/helpers/language";
+
 
 
 export default function Hero() {
     const [showfact, setShowfact] = useContext(ShowFactContext)
+    var lang = useLang("da")
     return (
         <>
             <article className="h-[700px] sm:h-screen md:h-[500px] relative z-1 ">
@@ -36,9 +39,9 @@ export default function Hero() {
 
                     className="w-80% sm:w-1/2 text-m sm:text-xl font-title text-center top-40 absolute z-5 right-0 sm:top-10 md:hover:shadow-lg  shadow-lg md:hover:shadow-darkColor shadow-darkColor md:hover:border-3 border-3 md:hover:rounded-lg md:hover:border-darkColor border-darkColor rounded-b-lg p-2"
                 >
-                    <h2 className="bg-lightColor  font-body text-center shadow-lg shadow-darkColor rounded-md  p-2">Available for:</h2>
-                    <p className="font-title p-3">Unpaid internship from 6th of May 20/24 til 14th of June 2024</p>
-                    <a href="mailto:silje.a.paldrup@gmail.com?body=Our%20company%20is%20very%20interested%20in%20having%20you%20as%20an%20intern!&subject=Internship!" target="_blank"><motion.p whileTap={{ scale: 0.95 }} className="hover:underline ">Interested?</motion.p></a>
+                    <h2 className="bg-lightColor  font-body text-center shadow-lg shadow-darkColor rounded-md  p-2">{lang.internship_title}</h2>
+                    <p className="font-title p-3">{lang.internship_description}</p>
+                    <a href="mailto:silje.a.paldrup@gmail.com?body=Our%20company%20is%20very%20interested%20in%20having%20you%20as%20an%20intern!&subject=Internship!" target="_blank"><motion.p whileTap={{ scale: 0.95 }} className="hover:underline ">{lang.internship_link}</motion.p></a>
                 </motion.div>
                 <motion.div
                     whileTap={{ scale: 0.95 }}
