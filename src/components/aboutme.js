@@ -26,11 +26,7 @@ export default function Aboutme() {
         }
     };
     const [isVisible, setIsVisible] = useState(false);
-    const lang = useLang("da")
-
-
-
-
+    var lang = useLang("da")
     return (
         <>
             <div className="w-14 h-14 md:w-24 md:h-24 absolute top-100 left-2 sm:left-40">
