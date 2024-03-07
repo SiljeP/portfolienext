@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { Starsvg } from "./starsvg";
 import ShowFactContext from "@/helpers/showfactcontext";
+import useLang from "@/helpers/language";
 
 
 
@@ -25,6 +26,10 @@ export default function Aboutme() {
         }
     };
     const [isVisible, setIsVisible] = useState(false);
+    const lang = useLang("da")
+
+
+
 
     return (
         <>
@@ -41,7 +46,10 @@ export default function Aboutme() {
                     hidden: { opacity: 0, scale: 0 }
                 }}
                 className="text-center mt-4 ">
-                <h1 id="about" className=" font-title text-white text-4xl md:text-6xl "><span lang="en">About me</span><span lang="da" aria-hidden="true" >Om Mig</span></h1>
+                <h1 id="about" className=" font-title text-white text-4xl md:text-6xl ">
+                    {lang.hello}
+
+                </h1>
                 <p className="text-black font-body text-l md:text-2xl">
                     <span lang="en">Hello world! My name is Silje, and I&apos;m a Danish, 24 year old girl, studying to become a frontend developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time.</span>
                     <span lang="da">Hej verden! Jeg hedder Silje, og jeg er en dansk 24 årig pige, der studerer Webudvikling. Jeg er meget detaljeorienteret, elsker at løse probelmer og har en unik evne til at fokuserer i længere tid af gangen.</span>
