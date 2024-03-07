@@ -7,10 +7,11 @@ import Image from "next/image";
 import Instagram from '/public/images/instagram.png'
 import Linkedin from '/public/images/linkedin.png'
 import Mail from '/public/images/mail.png'
+import useLang from "@/helpers/language";
 
 
 export default function Footer() {
-
+    var lang = useLang("da")
     return (
 
         <footer className="w-100% w-full h-full mt-10 shadow-[0px_-10px_16px_1px_#FEB2B2]">
@@ -38,7 +39,7 @@ export default function Footer() {
                     </li>
                 </ul>
             </div>
-            <p className="text-white text-s font-body text-center pb-3" >Pssst. Have you tried clicking the stars?</p>
+            <p className="text-white text-s font-body text-center pb-3" >{lang.star_hint}</p>
             <div className="hidden md:block mb-0 w-80% mt-10">
                 <LogoCarousel />
             </div>

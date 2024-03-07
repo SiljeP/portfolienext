@@ -11,6 +11,7 @@ import changelang from "@/helpers/language";
 export default function Navbar() {
 
     const [mobileNav, toggleMobileNav] = useCycle(false, true)
+    var lang = useLang("da")
 
     return (
         <>
@@ -89,15 +90,15 @@ export default function Navbar() {
                                         </motion.li>
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>
-                                            <a href="#about" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>About</a>
+                                            <a href="#about" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>{lang.menu_about}</a>
                                         </motion.li>
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>
-                                            <a href="#work" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Work</a>
+                                            <a href="#work" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>{lang.menu_work}</a>
                                         </motion.li>
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>
-                                            <a href="#contact" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>Contact</a>
+                                            <a href="#contact" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>{lang.menu_contact}</a>
                                         </motion.li>
                                     </ul>
                                 </motion.div>

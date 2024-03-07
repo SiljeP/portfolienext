@@ -1,4 +1,22 @@
 {
-    "menu_about":"About me"
+    
+    "menu_about":"About me",
+    "about_first": "Hello world! My name is Silje, and I'm a Danish, 24 year old girl, studying to become a frontend developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time. ",
+    "about_second": "I'm currently on the main course in VET (Vocational education and  training) in Webdevelopment at Roskilde Technical College(VET), that I'm graduating from in autumn 2024.",
+    "about_third": "I'm currently looking for an internship in frontend development lasting six weeks (paid by my school - not you!) in the period 6. May 2024 to 14. June 2024.",
+    "about_personal_title":"Personal",
+    "about_personal": "I'm the type of person that has a billion hobbies, so I hope I'm forgiven for the fact that not every hobby is mentioned here. I've always been a big reader, so I usually read in between 100-200 books a year. Besides that, I enjoy making rugs (rug tufting), bookbinding, painting with diffrent mediums and going on long walks and training with my dog Bucky. ",
 
+    "program_work":"I work with",
+    "menu_work": "Work",
+    "work_first":"Most of my school projects have been before learning React and therefore this page, my portfolio, is currently the most up to date project I have. In this portfolio I make use of: React, next.js, Tailwind, framer motion for animations, typed.js library and more.",
+    "work_second": "Other projects, from before React, includes working with webapi's on a pokedex, check out here",
+    
+    "menu_contact": "Contact",
+    "menu_first":"Please feel free to contact me with questions, or if you're interested in taking a look at my CV.",
+    "menu_email":"E-mail",
+    "menu_message":"Message:",
+    "menu_button": "Submit",
+
+    "star_hint":"Pssst. Have you tried clicking the stars?"
 }
