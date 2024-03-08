@@ -5,7 +5,7 @@
 
     "menu_about":"About me",
     "about_first": "Hello world! My name is Silje, and I'm a Danish, 24 year old girl, studying to become a frontend developer. I have an eye for detail, love problemsolving and are able to focus on a project for long periods of time. ",
-    "about_second": "I'm currently on the main course in VET (Vocational education and  training) in Webdevelopment at Roskilde Technical College(VET), that I'm graduating from in autumn 2024.",
+    "about_second": "I'm currently on the main course in VET (Vocational education and  training) in Webdevelopment at <a href=\"//www.rts.dk/in-english\">Roskilde Technical College(VET)</a>, that I'm graduating from in autumn 2024.",
     "about_third": "I'm currently looking for an internship in frontend development lasting six weeks (paid by my school - not you!) in the period 6. May 2024 to 14. June 2024.",
     "about_personal_title":"Personal",
     "about_personal": "I'm the type of person that has a billion hobbies, so I hope I'm forgiven for the fact that not every hobby is mentioned here. I've always been a big reader, so I usually read in between 100-200 books a year. Besides that, I enjoy making rugs (rug tufting), bookbinding, painting with diffrent mediums and going on long walks and training with my dog Bucky. ",
@@ -22,5 +22,15 @@
     "menu_button": "Submit",
 
     "backtotop":"Back to top",
-    "star_hint":"Pssst. Have you tried clicking the stars?"
+    "star_hint":"Pssst. Have you tried clicking the stars?",
+
+    "fact_title":"Fun space fact!",
+    "fact_one":"On Mercury a day is twice as long as a year",
+    "fact_two":"Jupiter’s magnetic field is bigger than the Moon",
+    "fact_three":"Black holes have theoretical opposites known as white holes",
+    "fact_four":"Neptune has only completed one orbit around the Sun since its discovery",
+    "fact_five":"Venus spins backwards",
+    "fact_six":"Uranus is the coldest planet in the Solar System",
+    "fact_seven":"5 billion Suns could fit in UY Scuti, one of the biggest known stars"
+    
 }

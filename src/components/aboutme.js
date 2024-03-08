@@ -27,7 +27,7 @@ export default function Aboutme() {
     };
     const [isVisible, setIsVisible] = useState(false);
 
-    var lang = useLang("da")
+    var lang = useLang("en")
 
     return (
         <>
@@ -52,8 +52,8 @@ export default function Aboutme() {
                     {lang.about_first}
 
                 </p>
-                <p className="text-black font-body text-l md:text-2xl">
-                    {lang.about_second}
+                <p className="text-black font-body text-l md:text-2xl" dangerouslySetInnerHTML={{ __html: lang.about_second }}>
+
 
                 </p>
                 <p className="text-black font-body text-l md:text-2xl">

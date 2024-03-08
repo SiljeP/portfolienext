@@ -7,7 +7,7 @@ import useLang from "@/helpers/language"
 
 export default function Contact() {
     const [showfact, setShowfact] = useContext(ShowFactContext)
-    var lang = useLang("da")
+    var lang = useLang("en")
     return (
 
         <motion.div

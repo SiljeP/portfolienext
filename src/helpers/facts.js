@@ -3,23 +3,27 @@
 import { useContext, useEffect, useState } from "react";
 import ShowFactContext from "./showfactcontext";
 import { motion, AnimatePresence } from "framer-motion";
+import useLang from "./language";
 
 export default function FactStar({ className }) {
     const [showfact, setShowfact] = useContext(ShowFactContext)
 
     const [data, setData] = useState(null)
 
+    var lang = useLang("en")
+
     useEffect(function () {
 
         const FACTS = [
-            "On Mercury a day is twice as long as a year",
-            "Jupiter’s magnetic field is bigger than the Moon",
-            "Black holes have theoretical opposites known as white holes",
-            "Neptune has only completed one orbit around the Sun since its discovery",
-            "Venus spins backwards",
-            "Uranus is the coldest planet in the Solar System",
-            "5 billion Suns could fit in UY Scuti, one of the biggest known stars",
+            lang.fact_one,
+            lang.fact_two,
+            lang.fact_three,
+            lang.fact_four,
+            lang.fact_five,
+            lang.fact_six,
+            lang.fact_seven
         ]
+
         const randomIndex = Math.floor(Math.random() * FACTS.length);
 
         setData({
@@ -49,7 +53,7 @@ export default function FactStar({ className }) {
                         exit={{ opacity: 0, x: 200, scale: 0.5, transition: { duration: 0.3 } }}
                         className={className}  >
                         {/* style={{ backgroundColor: "rgba(255 146 146 / 75%)" }} */}
-                        <h1 className="font-title font-bold text-white text-m sm:text-l md:text-xl">Fun space fact!</h1>
+                        <h1 className="font-title font-bold text-white text-m sm:text-l md:text-xl">{lang.fact_title}</h1>
                         <p className="font-body text-s sm:text-m md:text-l text-white p-2">{data?.text}</p>
                     </motion.div >
 

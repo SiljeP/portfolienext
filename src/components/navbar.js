@@ -12,7 +12,7 @@ import useLang from "@/helpers/language";
 export default function Navbar() {
 
     const [mobileNav, toggleMobileNav] = useCycle(false, true)
-    var lang = useLang("da")
+    var lang = useLang("en")
 
     return (
         <>

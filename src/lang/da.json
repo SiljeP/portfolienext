@@ -22,6 +22,16 @@
     "menu_button": "Send",
 
     "backtotop":"Tilbage til toppen",
-    "star_hint":"Pssst. Har du prøvet at klikke på stjernerne?" 
+    "star_hint":"Pssst. Har du prøvet at klikke på stjernerne?",
+
+    "fact_title":"Sjovt fakta om rummet!",
+    "fact_one":"På Merkur er en dag dobbelt så lang som et år.",
+    "fact_two":"Jupiters magnetiske felt er størrer end Månen.",
+    "fact_three":"Sorte huller har en teoretisk modsætning som hedder hvide huller.",
+    "fact_four":"Neptune har kun færdiggjort et kredsløb om solen siden den blev opdaget.",
+    "fact_five":"Venus drejer baglæns.",
+    "fact_six":"Uranus er den koldeste planet i solsystemet.",
+    "fact_seven":"5 billioner af vores Sol kan passe ind i UY Scuti, som er en af de største kendte stjerner."
+    
     
 }
