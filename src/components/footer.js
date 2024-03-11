@@ -11,7 +11,9 @@ import useLang from "@/helpers/language";
 
 
 export default function Footer() {
-    var lang = useLang("en")
+
+    var { lang } = useLang("en")
+
     return (
 
         <footer className="w-100% w-full h-full mt-10 shadow-[0px_-10px_16px_1px_#FEB2B2]">

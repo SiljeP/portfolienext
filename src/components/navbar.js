@@ -6,13 +6,14 @@ import Linkedin from '/public/images/linkedin.png'
 import Mail from '/public/images/mail.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLanguage } from '@fortawesome/free-solid-svg-icons';
-import changelang from "@/helpers/language";
+
 import useLang from "@/helpers/language";
 
 export default function Navbar() {
 
     const [mobileNav, toggleMobileNav] = useCycle(false, true)
-    var lang = useLang("en")
+
+    var { lang, changeLanguage } = useLang("en")
 
     return (
         <>
@@ -87,7 +88,7 @@ export default function Navbar() {
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>
                                             <a href="#" className="scroll-smooth text-xl md:text-4xl font-bold" onClick={() => toggleMobileNav(false)}>
-                                                <FontAwesomeIcon onClick={() => changelang()} className="text-4xl" icon={faLanguage} /></a>
+                                                <FontAwesomeIcon onClick={() => changeLanguage(lang === "en" ? "da" : "en")} className="text-4xl" icon={faLanguage} /></a>
                                         </motion.li>
                                         <motion.li
                                             whileTap={{ scale: 0.95 }}>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function Work() {
 
-    var lang = useLang("en")
+    var { lang } = useLang("en")
 
     return (
         <> <motion.div

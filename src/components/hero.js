@@ -13,7 +13,8 @@ import useLang from "@/helpers/language";
 
 export default function Hero() {
     const [showfact, setShowfact] = useContext(ShowFactContext)
-    var lang = useLang("en")
+
+    var { lang } = useLang("en")
     return (
         <>
             <article className="h-[700px] sm:h-screen md:h-[500px] relative z-1 ">

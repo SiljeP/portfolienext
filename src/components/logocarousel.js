@@ -11,7 +11,9 @@ import Sass from '/public/images/sass.png'
 import useLang from '@/helpers/language'
 
 export default function LogoCarousel() {
-  var lang = useLang("en")
+
+  var { lang } = useLang("en")
+
   const logos = [
     { src: HTML, alt: 'HTML5 logo' },
     { src: CSS, alt: 'CSS logo' },

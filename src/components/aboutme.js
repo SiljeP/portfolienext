@@ -27,7 +27,7 @@ export default function Aboutme() {
     };
     const [isVisible, setIsVisible] = useState(false);
 
-    var lang = useLang("en")
+    var { lang } = useLang("en")
 
     return (
         <>

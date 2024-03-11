@@ -4,10 +4,10 @@ import da from "@/lang/da.json"
 import en from "@/lang/en.json"
 import { useEffect, useState } from "react"
 
-export default function useLang(lang = "en") {
-    const [state, setState] = useState(lang)
+export default function useLang() {
+    const [state, setState] = useState(en)
 
-    useEffect(function () {
+    function changeLanguage(lang) {
         switch (lang) {
             case "en":
                 setState(en)
@@ -16,16 +16,11 @@ export default function useLang(lang = "en") {
                 setState(da)
                 break;
         }
-    }, [lang])
+    }
 
-    return state
+
+    return { lang: state, changeLanguage }
 }
 
 
 
-// function changelang() {
-//     var html = document.getElementById("html")
-//     html.setAttribute("lang", "da")
-
-// }
-// export default changelang

@@ -6,8 +6,10 @@ import ShowFactContext from "@/helpers/showfactcontext"
 import useLang from "@/helpers/language"
 
 export default function Contact() {
+
     const [showfact, setShowfact] = useContext(ShowFactContext)
-    var lang = useLang("en")
+
+    var { lang } = useLang("en")
     return (
 
         <motion.div
@@ -27,6 +29,12 @@ export default function Contact() {
             <p className="font-body text-black p-2 text-l md:text-2xl text-center ">{ }</p>
             <div>
                 <form className="max-w-sm mx-auto" name="contact" method="POST" data-netlify="true">
+                    {/* Bot-trigger felt */}
+                    <div className="hidden">
+                        <label>
+                            Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                    </div>
                     <input type="hidden" name="form-name" value="contact" />
                     <div>
                         <label className="font-body block mb-2 text-l text-white" htmlFor="email">{lang.menu_email}:</label>

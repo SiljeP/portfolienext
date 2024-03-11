@@ -10,7 +10,7 @@ export default function FactStar({ className }) {
 
     const [data, setData] = useState(null)
 
-    var lang = useLang("en")
+    var { lang } = useLang("en")
 
     useEffect(function () {
 
